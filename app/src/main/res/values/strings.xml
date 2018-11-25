@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GitHub Trending</string>
+    <string name="forks"><![CDATA[
+    <b>Forks:</b> %1$d
+    ]]></string>
+    <string name="size"><![CDATA[<b>Size:</b> %1$d]]></string>
+    <string name="language"><![CDATA[<b>Language:</b> %1$s]]></string>
+    <string name="createdAt"><![CDATA[<b>Created At:</b> %1$s]]></string>
+    <string name="license"><![CDATA[<b>License:</b> %1$s]]></string>
+    <string name="score"><![CDATA[<b>Score:</b> %1$.2f]]></string>
+    <string name="generalErrorMessge">An error occurred while fetching repos</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+</resources>

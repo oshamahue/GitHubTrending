@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                                               android:layout_width="0dp"
+                                               android:id="@+id/recyclerView"
+                                               app:layout_constraintStart_toStartOf="parent"
+                                               app:layout_constraintTop_toTopOf="parent"
+                                               app:layout_constraintEnd_toEndOf="parent"
+                                               app:layout_constraintBottom_toTopOf="@id/radioGroup"
+                                               android:layout_height="0dp"/>
+
+    <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:text="@string/weekly"
+                android:id="@+id/weeklyRb"
+                style="@style/radioButtonStyle"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:text="@string/monthly"
+                android:id="@+id/monthlyRb"
+                style="@style/radioButtonStyle"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:text="@string/yearly"
+                android:id="@+id/yearlyRb"
+                style="@style/radioButtonStyle"/>
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/trending_navigation"
+            app:startDestination="@id/trendingListFragment">
+
+    <fragment
+            android:id="@+id/trendingListFragment"
+            android:name="com.oshamahue.githubtrending.ui.list.TrendingListFragment"
+            android:label="TrendingListFragment">
+        <action
+                android:id="@+id/action_trendingListFragment_to_repoDetailFragment"
+                app:destination="@id/repoDetailFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/repoDetailFragment"
+            android:name="com.oshamahue.githubtrending.com.oshamahue.githubtrending.ui.detail.RepoDetailFragment"
+            android:label="RepoDetailFragment"/>
+</navigation>
